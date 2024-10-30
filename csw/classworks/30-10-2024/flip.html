@@ -1,0 +1,41 @@
+<!--create an html page 2 div flip and panel -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+               $("#panel").slideDown(3000);
+            });
+$("#b1").click(function(){
+$("#panel").stop();
+        });
+});
+    </script>
+    
+    <style>
+        #flip,#panel{
+            background-color: orange;
+             text-align:center;
+            border: 2px solid black;
+            left: 0; /* Ensure it starts from the left */
+        }
+#panel{
+display:none;
+padding:50px;
+}
+
+.stop{
+position:relative;
+}
+    </style>
+</head>
+<body>
+    <div id="flip">Click to Reveal A Secret</div>
+    <div id="panel">Uttam Hauchi Param Mgh</div>  
+<div class="stop">
+<button id="b1">Stop</button>
+</div>
+</body>
+</html>
