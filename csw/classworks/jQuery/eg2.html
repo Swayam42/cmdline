@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+                   <title>Eg 2 on jQuery </title>
+	 <script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+ </script>
+
+<style>
+.xy:hover{
+color:red;
+}
+</style>
+
+  <script>
+   $(document).ready(function() {
+	$(".xy").click(function(){
+	$(".xy").hide();
+    $("button").click(function() {
+     $("#a").hide();
+   	});
+	});
+   	});
+
+</script>
+</head>
+
+<body>
+<h3 id="a">Events</h3>
+<h3 id="b">Effects</h3>
+
+<button>Click To Hide 1st heading</button>
+<hr>
+<p class="xy">Click is an EVENT</p>
+<p class="yz">Hide is an EFFECT</p>
+
+</body>
+</html>
+

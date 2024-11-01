@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+                   <title>Eg 2 on jQuery </title>
+	 <script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+ </script>
+
+<style>
+.xy:hover{
+color:red;
+}
+</style>
+
+  <script>
+    $(document).ready(function() {
+    $("#a").click(function() {
+     $("#xy").hide();
+   	});
+ $("#b").click(function() {
+     $("#xy").show();
+   	});
+	});
+
+   	
+
+   
+</script>
+</head>
+
+<body>
+<h3 id="xy">Heading 1</h3>
+<h4 id="yz">Heading 2</h4>
+<button id="a">Hide</button>
+<button id="b">Show</button>
+
+
+
+</body>
+</html>
+

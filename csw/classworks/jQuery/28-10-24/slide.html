@@ -1,0 +1,50 @@
+<!--creater 2 divs div1 and div2 .. 1st div mein click to slide down 
+					      2nd div mein hi user
+style prop to both divisions : border,bg color, text-align,padding-->
+<!--Q. create an html page that contains 3 divisions with ids div1,div2,div3 and a button to click .when button is clicked all the blocks will fade out--> 
+<!DOCTYPE html>
+ <html>
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+$("#div1").click(function(){
+$("#div2").slideDown(2000);
+});
+});
+ </script>
+ 
+<style>
+#div1{
+padding:5px;
+background-color:#9977ba;
+border:2px solid black;
+text-align:center;
+
+
+}
+
+#div2{
+padding:30px;
+border:2px solid black;
+display:none;
+
+
+}
+</style>
+
+ </head>
+ <body>
+
+<div id="div1">
+Click to Slide down
+</div>
+<br>
+<div id="div2">
+Hi User !
+</div>
+
+
+
+ </body>
+ </html> 

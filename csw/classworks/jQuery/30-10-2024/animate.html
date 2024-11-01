@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                $("div").animate({
+                    left: '500px',
+                    opacity: '0.2',
+                    height: '200px',
+                    width: '100px'
+                });
+            });
+        });
+    </script>
+    
+    <style>
+        div {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            border: 2px solid black;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id="b1">Move the box</button>
+</body>
+</html>

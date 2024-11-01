@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button#hide").click(function() {
+                $(".h, .p").hide();
+            });
+
+            $("#xy").click(function() {
+                $("#yz").slideToggle(); // Toggle the slide down effect
+            });
+
+            $("button#showHeading").click(function() {
+                alert($("h1.h").text()); // Show heading text in alert
+            });
+
+            $("img").click(function() {
+                alert($(this).attr("src")); // Show image source in alert
+            });
+        });
+    </script>
+
+    <style>
+        #xy {
+            position: relative;
+            display: inline-block;
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        #yz {
+            position: absolute;
+            display: none; /* Initially hidden */
+            background-color: green;
+            border: 2px solid red;
+            width: 100px;
+            left: 0; /* Align with the parent div */
+            padding: 5px; /* Add some padding */
+        }
+
+        #xy:hover #yz {
+            display: block; /* Show on hover */
+        }
+
+        img {
+            margin-top: 20px; /* Space above the image */
+            cursor: pointer; /* Change cursor to pointer for image */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h">Heading 1</h1>
+    <p class="p">Paragraph 1 </p>
+    <button id="hide">Click to Hide</button>
+    <button id="showHeading">Show Heading Text</button>
+    <hr>
+    <div id="xy">
+        Click Me
+        <div id="yz">
+            Happy New Year 2025 !!
+        </div>
+    </div>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+</body>
+</html>

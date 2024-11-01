@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+ <html>
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script>
+$(document).ready(function(){
+$("#div1").click(function(){
+$("#div2").slideToggle(2000);
+});
+});
+ </script>
+ 
+<style>
+#div1{
+padding:5px;
+background-color:#9977ba;
+border:2px solid black;
+text-align:center;
+
+}
+
+#div2{
+padding:30px;
+border:2px solid black;
+display:none;
+
+
+}
+</style>
+
+ </head>
+ <body>
+
+<div id="div1">
+Click to Slide
+</div>
+<br>
+<div id="div2">
+Hi User !
+</div>
+
+
+
+ </body>
+ </html> 

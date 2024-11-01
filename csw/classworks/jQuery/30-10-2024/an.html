@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                var x = $("div");
+                x.animate({ left: "500px", opacity: 0.3, height: '200px', width: '200px' });
+                x.animate({ left: "200px", opacity: 0.5, height: '200px', width: '200px' });
+                x.animate({ left: "100px", opacity: 0.7, height: '200px', width: '200px' }, "slow");
+            });
+        });
+    </script>
+    
+    <style>
+        div {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            border: 2px solid black;
+            left: 0; /* Ensure it starts from the left */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <button id="b1">Move the box</button>
+</body>
+</html>

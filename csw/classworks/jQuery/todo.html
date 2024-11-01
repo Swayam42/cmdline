@@ -1,0 +1,44 @@
+<DOCTYPE html>
+<html>
+<head>
+<script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”>
+</script>
+<script>
+$(document).ready(function(){
+$("#bt").click(function(){
+ $("#a").animate({
+ left: '500px',
+ opacity: '0.2',
+ height: '100px',
+ width: '100px'
+ });
+ });
+});
+
+</script>
+<style>
+div{
+height : auto;
+width 50px;
+background-color: orange;
+position: fixed;
+}
+</style>
+
+</head>
+
+<body>
+<button id="bt"> animate</button>
+
+<div id="a"> </div>
+<br>
+<div id="b"> </div>
+<br>
+<div id="c"> </div>
+<br>
+<div id="d"> </div>
+
+</body>
+</html>
+
+
