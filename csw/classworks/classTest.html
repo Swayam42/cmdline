@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                 $("#hide").click(function() {
+                $(".h, .p").hide();
+            });
+
+                      $("#xy").click(function() {
+                $("#yz").slideToggle(1500);
+            });
+
+                    $("#srci").click(function() {
+                alert("Value: " + $("#image").attr("src")); // Fixed selector
+            });
+        });
+    </script>
+
+    <style>
+        #xy {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background-color: cyan;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        #yz {
+            position: absolute;
+            display: none;
+            background-color: green;
+            border: 2px solid red;
+            width: 100px;
+            left: 0;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h">Heading 1</h1>
+    <p class="p">Paragraph 1</p>
+    <button id="hide">Click to Hide</button>
+    <hr>
+    <div id="xy">
+        Click Me
+        <div id="yz">
+            Happy New Year 2025 !!
+        </div>
+    </div>
+    <br><br><br><br>
+    <hr>
+    <img src="D:\\Swayam_2341010085\\ClassWorks\\lotus.jpg" alt="lotus" style="width:200px" id="image"><br>
+    <button id="srci">Show Image Source</button>
+</body>
+</html>
