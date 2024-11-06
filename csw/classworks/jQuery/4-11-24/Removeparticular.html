@@ -1,0 +1,39 @@
+<!--remove function : deletes the child element 
+create a div with id=x that contains a heading and a para provide color , bg color,width and height to the div -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Append</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                 $("#b1").click(function() {
+                $("p").remove("#v");
+            });
+
+               
+                          });
+    </script>
+
+    <style>
+         #x{
+background-color:#48a1b5;
+width:100px;
+margin:7px;
+
+}
+
+    </style>
+</head>
+
+<body>
+<div id="x">
+<h3 id="h">ଶୀର୍ଷଲେଖ ୧</h3>
+<p id="v">ଅନୁଚ୍ଛେଦ ୧</p>
+</div>
+
+<button id="b1">Remove ଅନୁଚ୍ଛେଦ ୧</button>
+
+</body>
+</html>

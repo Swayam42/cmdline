@@ -1,0 +1,33 @@
+<!--create an html page containing an image and two buttons after and before with ids b1 and b2
+when b1 is clicked add the name of image before  when b2 is clicked add text after the image-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Append</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                 $("#b1").click(function() {
+                $("#raze").before("<b>Colorful kill!</b>");
+            });
+
+                 $("#b2").click(function() {
+                $("#raze").after("<b>Holy shit!</b>");
+            });
+
+                          });
+    </script>
+
+    <style>
+       
+    </style>
+</head>
+
+<body>
+<img src="https://w0.peakpx.com/wallpaper/797/561/HD-wallpaper-raze-red-paint-background-valorant.jpg" width="400px" id="raze"><br>               
+ 
+<button id="b1">Append Before</button>
+<button id="b2">Append After</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("div").first().css("background-color", "lightyellow");
+$("div").eq(1).css("background-color", "lightgreen");
+$("div").last().css("background-color", "red");
+
+});
+</script>
+
+<style>
+ div{ 
+ display: block;
+ border: 3px solid black;
+ width:300px;
+height:100px;
+
+
+}
+
+</style>
+</head>
+<body >
+<div>yellow</div><br>
+<div>green</div><br>
+<div>red</div>
+
+
+</body>
+</html>

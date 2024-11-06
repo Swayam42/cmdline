@@ -1,0 +1,35 @@
+<!--create an html page containing 2 heading h1 and h2 and a para and a button  write a script function to add a class xyz and a class abc to the paragraph 
+both heading will be colored green and paras are blue green -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>addClass</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                 $("button").click(function() {
+                $("h1,h2").addClass("xyz");
+ 		$("p").addClass("abc");
+            });
+            });
+    </script>
+
+    <style>
+       .xyz{
+color:green;
+}
+.abc{
+color:blue;
+}
+    </style>
+</head>
+
+<body>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<p>This is a paragraph</p>
+
+<button>Add a class to HTML elements</button>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--create an html page containing 2 heading h1 and h2 with class = "xyz" and para with class = "abc" and a button removeClass from html elements 
+give bg color :yellow and text align : center and color : green-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>removeClass</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                 $("button").click(function() {
+                $("h1,h2").removeClass("xyz");
+ 		$("p").removeClass("abc");
+            });
+            });
+    </script>
+
+    <style>
+       .xyz{
+color:green;
+text-align:center;
+}
+.abc{
+color:blue;
+text-align:center;
+}
+    </style>
+</head>
+
+<body>
+<h1 class="xyz">Heading 1</h1>
+<h2 class="xyz">Heading 2</h2>
+<p class="abc">This is a paragraph</p>
+
+<button>Remove a class from HTML elements</button>
+</body>
+</html>
