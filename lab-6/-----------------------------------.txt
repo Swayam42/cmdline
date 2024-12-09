@@ -1,0 +1,50 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 07.12.2024 08:55:51
+-- Design Name: 
+-- Module Name: threetoeightdecoder - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity threetoeightdecoder is
+    Port ( EN,X,Y,Z : in STD_LOGIC;
+           D : out STD_LOGIC_VECTOR (0 to 7));
+end threetoeightdecoder;
+
+architecture Behavioral of threetoeightdecoder is
+
+begin
+D(0)<=NOT((NOT X) AND (NOT Y) AND(NOT Z) AND (NOT EN));
+D(1)<=NOT((NOT X) AND (NOT Y) AND  Z AND (NOT EN));
+D(2)<=NOT((NOT X) AND  Y AND(NOT Z) AND (NOT EN));
+D(3)<=NOT((NOT X) AND Y AND Z AND (NOT EN));
+D(4)<=NOT(( X) AND (NOT Y) AND(NOT Z) AND (NOT EN));
+D(5)<=NOT(( X) AND (NOT Y) AND( Z) AND (NOT EN));
+D(6)<=NOT(( X) AND ( Y) AND(NOT Z) AND (NOT EN));
+D(7)<=NOT(( X) AND ( Y) AND( Z) AND (NOT EN));
+end Behavioral;
